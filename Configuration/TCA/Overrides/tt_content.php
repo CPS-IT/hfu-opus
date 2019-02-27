@@ -42,7 +42,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['tx_hfuopus_publist'] = array(
 // Configure content element
 $GLOBALS['TCA']['tt_content']['types']['hfu_opus_publist'] = array(
     'showitem' => '
-        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
+        --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general,
             --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
             --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header;header,
             --palette--;LLL:EXT:hfu_opus/Resources/Private/Language/locallang.xlf:tca_palette_title.hfu_opus_publist;tx_hfuopus_publist,
