@@ -2,9 +2,9 @@
 
 namespace Hfu\HfuOpus\Utility;
 
-
 /**
  * Class OpusApi
+ *
  * @package Hfu\HfuOpus\Utility
  */
 class OpusApi

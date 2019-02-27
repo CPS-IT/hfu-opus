@@ -5,9 +5,9 @@ namespace Hfu\HfuOpus\ViewHelpers;
 use Hfu\HfuOpus\Utility\OpusApi as OPUS;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
-
 /**
  * Class PublistViewHelper
+ *
  * @package Hfu\HfuOpus\ViewHelpers
  */
 class PublistViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper
@@ -37,6 +37,7 @@ class PublistViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHel
     public function render($publistid)
     {
         $settings = $this->getSettings();
+
         return OPUS::fetchPubList($publistid, $settings['baseUrl']);
     }
 }

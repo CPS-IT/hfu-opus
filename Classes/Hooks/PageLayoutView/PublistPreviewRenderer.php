@@ -1,4 +1,5 @@
 <?php
+
 namespace Hfu\HfuOpus\Hooks\PageLayoutView;
 
 /*
@@ -14,9 +15,9 @@ namespace Hfu\HfuOpus\Hooks\PageLayoutView;
  * The TYPO3 project - inspiring people to share!
  */
 
-use \TYPO3\CMS\Backend\View\PageLayoutViewDrawItemHookInterface;
-use \TYPO3\CMS\Backend\View\PageLayoutView;
-use \TYPO3\CMS\Extbase\Utility\LocalizationUtility;
+use TYPO3\CMS\Backend\View\PageLayoutView;
+use TYPO3\CMS\Backend\View\PageLayoutViewDrawItemHookInterface;
+use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
 
 /**
  * Contains a preview rendering for the page module of CType="hfu_contentelements_spo"
@@ -41,8 +42,7 @@ class PublistPreviewRenderer implements PageLayoutViewDrawItemHookInterface
         &$headerContent,
         &$itemContent,
         array &$row
-    )
-    {
+    ) {
         if ($row['CType'] === 'hfu_opus_publist') {
             $itemContent .= '
             <table class="table table-condensed table-hover">
@@ -55,12 +55,12 @@ class PublistPreviewRenderer implements PageLayoutViewDrawItemHookInterface
                 </thead>
                 <tbody>
                     <tr>
-                        <td>'.
-                            LocalizationUtility::translate(
-                                'db_field_tt_content.tx_hfuopus_publistid',
-                                'hfu_opus'
-                            )
-                        .'</td>
+                        <td>' .
+                LocalizationUtility::translate(
+                    'db_field_tt_content.tx_hfuopus_publistid',
+                    'hfu_opus'
+                )
+                . '</td>
                         <td>' . $row['tx_hfuopus_publistid'] . '</td>
                     </tr>
                 </tbody>

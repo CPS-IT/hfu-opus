@@ -7,7 +7,7 @@ if (!defined('TYPO3_MODE')) {
     array(
         'LLL:EXT:hfu_opus/Resources/Private/Language/locallang.xlf:ce_hfu_opus_publist.title',
         'hfu_opus_publist',
-        'apps-clipboard-list'
+        'apps-clipboard-list',
     ),
     'CType',
     'hfu_opus'
@@ -36,7 +36,7 @@ $tx_hfuopus_fields = array(
 // Konfiguation Palette für OPUS-Publikationsliste
 $GLOBALS['TCA']['tt_content']['palettes']['tx_hfuopus_publist'] = array(
     'showitem' => 'tx_hfuopus_publistid',
-    'canNotCollapse' => 1
+    'canNotCollapse' => 1,
 );
 
 // Configure content element
@@ -49,5 +49,5 @@ $GLOBALS['TCA']['tt_content']['types']['hfu_opus_publist'] = array(
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
             --palette--;;language,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
-            --palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access'
+            --palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access',
 );
