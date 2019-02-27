@@ -5,9 +5,7 @@
 
 <f:if condition="{data}">
     <f:if condition="{data.header}">
-        <f:render section="Header" optional="true">
-            <f:render partial="Header/All" arguments="{_all}" />
-        </f:render>
+        <f:render partial="Header" arguments="{_all}" />
     </f:if>
 
     <f:if condition="{data.tx_hfuopus_publistid}">

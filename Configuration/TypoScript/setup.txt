@@ -7,6 +7,9 @@ lib.contentElement {
     templateRootPaths {
         1337 = {$plugin.tx_hfu_opus.templateRootPaths}
     }
+    partialRootPaths {
+        0 = {$plugin.tx_hfu_opus.partialRootPaths}
+    }
 }
 
 tt_content {
